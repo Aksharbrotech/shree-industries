@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Hard Anodising & CNC Machining - Shree Industries</title>
-    <meta name="description" content="Explore our manufacturing services: Hard Anodising for aluminum, precision Plastic Injection Molding, and VMC/CNC Machining in Anand, Gujarat.">
-    <meta name="keywords" content="Hard Anodising Service Anand, Plastic Injection Molding Gujarat, VMC Machining India, CNC Job Work, Industrial Anodizing">
-    <meta name="robots" content="index, follow">
+    <title>Industrial Manufacturing Services | Hard Anodising & CNC - Shree Industries</title>
+    <meta name="description" content="Explore our specialized services: Type III Hard Anodising, Precision VMC/CNC Machining, and Plastic Injection Molding in Anand, Gujarat.">
     <link rel="canonical" href="https://www.shreeindustries.com/services.html">
+    <meta name="robots" content="index, follow">
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (CDN for Preview) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        shree: {
-                            blue: '#0f172a', // Slate 900
-                            yellow: '#fbbf24', // Amber 400
-                            dark: '#020617',
+                        brand: {
+                            dark: '#0f172a',
+                            primary: '#020617',
+                            accent: '#fbbf24',
                         }
                     },
                     fontFamily: {
@@ -37,267 +29,136 @@
             }
         }
     </script>
-</head>
-<body class="font-sans text-gray-700 antialiased selection:bg-shree-yellow selection:text-shree-blue flex flex-col min-h-screen">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Top Bar -->
-    <div class="bg-shree-dark text-gray-400 py-2 text-xs hidden sm:block border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <p><i class="fas fa-map-marker-alt mr-2"></i> GIDC Industrial Estate, Anand, Gujarat</p>
-            <div class="flex space-x-4">
-                <a href="tel:+919876543210" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i> +91 98765 43210</a>
-                <a href="mailto:info@shreeindustries.com" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i> info@shreeindustries.com</a>
-            </div>
-        </div>
-    </div>
+    <!-- SERVICE SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Hard Anodising",
+      "provider": {
+        "@type": "ManufacturingBusiness",
+        "name": "Shree Industries"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Anand"
+      },
+      "description": "Type III Hard coat anodising for aluminum components providing wear resistance and corrosion protection."
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 flex flex-col min-h-screen">
 
     <!-- Navigation -->
-    <nav class="bg-shree-blue sticky top-0 z-50 shadow-xl border-b-2 border-shree-yellow">
+    <nav class="bg-brand-dark sticky top-0 z-50 shadow-xl border-b-2 border-brand-accent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
                     <a href="index.html" class="flex items-center gap-3 group">
-                        <i class="fa-solid fa-gears text-shree-yellow text-3xl group-hover:rotate-180 transition-transform duration-700"></i>
-                        <div class="flex flex-col">
-                            <span class="font-heading font-bold text-2xl tracking-wider text-white uppercase">Shree <span class="text-shree-yellow">Industries</span></span>
-                            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Engineering Excellence</span>
-                        </div>
+                        <i class="fa-solid fa-gears text-brand-accent text-3xl group-hover:rotate-180 transition-transform duration-700"></i>
+                        <span class="font-heading font-bold text-2xl tracking-wider text-white uppercase">Shree <span class="text-brand-accent">Industries</span></span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Home</a>
-                    <a href="about.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">About Us</a>
-                    <a href="services.html" class="text-shree-yellow font-medium border-b-2 border-shree-yellow px-1 py-1">Services</a>
-                    <a href="blog.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Blog</a>
-                    <a href="contact.html" class="bg-shree-yellow text-shree-blue hover:bg-white hover:text-shree-blue font-bold px-5 py-2.5 rounded shadow-lg transition-all transform hover:-translate-y-0.5">Contact Us</a>
+                    <a href="index.html" class="text-white hover:text-brand-accent font-medium transition-colors px-1 py-1">Home</a>
+                    <a href="services.html" class="text-brand-accent font-medium border-b-2 border-brand-accent px-1 py-1">Services</a>
+                    <a href="contact.html" class="bg-brand-accent text-brand-primary hover:bg-white font-bold px-5 py-2.5 rounded shadow-lg">Get a Quote</a>
                 </div>
+                <!-- Mobile Toggle -->
                 <div class="flex items-center md:hidden">
-                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-white hover:text-shree-yellow p-2">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
+                    <button onclick="document.getElementById('m-menu').classList.toggle('hidden')" class="text-white text-2xl"><i class="fas fa-bars"></i></button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-shree-blue border-t border-gray-700">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">About Us</a>
-                <a href="services.html" class="block px-3 py-2 text-shree-yellow font-bold bg-gray-800 rounded">Services</a>
-                <a href="blog.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Blog</a>
-                <a href="contact.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Contact Us</a>
-            </div>
+        <div id="m-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-700">
+            <a href="index.html" class="block px-4 py-3 text-white">Home</a>
+            <a href="services.html" class="block px-4 py-3 text-brand-accent font-bold">Services</a>
+            <a href="contact.html" class="block px-4 py-3 text-white">Contact</a>
         </div>
     </nav>
 
-    <!-- Page Header/Hero -->
-    <header class="bg-shree-blue py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1580983218765-f663bec07b37?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-shree-blue to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">Our Services</h1>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Specialized industrial solutions designed for precision, durability, and performance.</p>
-        </div>
-    </header>
+    <main>
+        <!-- Page Header -->
+        <header class="bg-brand-primary py-16 text-center text-white relative overflow-hidden">
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Our Services</h1>
+                <p class="text-gray-300 max-w-2xl mx-auto">Specialized industrial solutions designed for precision, durability, and performance.</p>
+            </div>
+        </header>
 
-    <main class="flex-grow">
-        
-        <!-- Service 1: Hard Anodising -->
-        <section id="anodising" class="py-20 bg-white border-b border-gray-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row gap-12 items-center">
-                    <div class="w-full lg:w-1/2">
-                        <div class="inline-block bg-shree-yellow/20 text-shree-blue font-bold px-4 py-1 rounded-full text-sm mb-4">Surface Treatment</div>
-                        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">Hard Anodising</h2>
-                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                            Our Hard Anodising (Type III) process creates an extremely hard, abrasion-resistant coating on aluminum surfaces. This electrochemical process is essential for components exposed to harsh environments or heavy wear.
-                        </p>
-                        
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-shree-yellow mb-8">
-                            <h4 class="font-bold text-gray-900 mb-2">Key Benefits:</h4>
-                            <ul class="space-y-2">
-                                <li class="flex items-center text-gray-700"><i class="fas fa-check text-shree-yellow mr-3"></i> Extreme wear and abrasion resistance</li>
-                                <li class="flex items-center text-gray-700"><i class="fas fa-check text-shree-yellow mr-3"></i> Superior corrosion protection</li>
-                                <li class="flex items-center text-gray-700"><i class="fas fa-check text-shree-yellow mr-3"></i> Electrical insulation (dielectric properties)</li>
-                                <li class="flex items-center text-gray-700"><i class="fas fa-check text-shree-yellow mr-3"></i> Improved lubricant retention</li>
-                            </ul>
-                        </div>
-                        
-                        <a href="contact.html" class="inline-block bg-shree-blue text-white font-bold py-3 px-8 rounded hover:bg-shree-yellow hover:text-shree-blue transition-colors">Get a Quote</a>
-                    </div>
-                    <div class="w-full lg:w-1/2 relative">
-                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-shree-yellow rounded-full opacity-20"></div>
-                        <img src="https://images.unsplash.com/photo-1621252179027-94459d27d3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hard Anodising Process" class="rounded-lg shadow-2xl relative z-10 w-full h-auto object-cover">
-                    </div>
+        <!-- Service 1 -->
+        <section id="anodising" class="py-20 bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <div class="inline-block bg-brand-accent/20 text-brand-primary font-bold px-3 py-1 rounded text-sm mb-4">Surface Treatment</div>
+                    <h2 class="text-3xl font-heading font-bold text-brand-dark mb-4">Hard Anodising (Type III)</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Our hard coat anodising process creates an extremely hard, abrasion-resistant coating on aluminum surfaces. Essential for components exposed to harsh environments, this electrochemical process enhances the natural oxide layer.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brand-accent mr-3"></i> <strong>Hardness:</strong> Comparable to tool steel (60-70 Rockwell C).</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brand-accent mr-3"></i> <strong>Thickness:</strong> Controlled build-up from 25 to 100 microns.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brand-accent mr-3"></i> <strong>Insulation:</strong> Excellent dielectric properties.</li>
+                    </ul>
+                    <a href="contact.html" class="bg-brand-dark text-white font-bold py-3 px-6 rounded hover:bg-brand-accent hover:text-brand-primary transition-colors">Request Anodising Quote</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1621252179027-94459d27d3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hard Anodised Aluminum Parts" class="rounded-lg shadow-xl w-full h-auto object-cover">
                 </div>
             </div>
         </section>
 
-        <!-- Service 2: Plastic Injection Molding -->
+        <!-- Service 2 -->
         <section id="molding" class="py-20 bg-gray-50 border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row-reverse gap-12 items-center">
-                    <div class="w-full lg:w-1/2">
-                        <div class="inline-block bg-blue-100 text-shree-blue font-bold px-4 py-1 rounded-full text-sm mb-4">Mass Production</div>
-                        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">Plastic Injection Molding</h2>
-                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                            We provide end-to-end plastic injection molding services, from mold design consultation to final part production. Our facility is equipped to handle various thermoplastic materials suitable for automotive, consumer, and industrial applications.
-                        </p>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <i class="fas fa-fill-drip text-shree-yellow text-2xl mb-2"></i>
-                                <h4 class="font-bold">Material Versatility</h4>
-                                <p class="text-sm text-gray-500">ABS, Polypropylene, Nylon, Polycarbonate, and more.</p>
-                            </div>
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <i class="fas fa-drafting-compass text-shree-yellow text-2xl mb-2"></i>
-                                <h4 class="font-bold">Precision Molds</h4>
-                                <p class="text-sm text-gray-500">High-quality steel molds designed for longevity and accuracy.</p>
-                            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse gap-12 items-center">
+                <div class="md:w-1/2">
+                    <div class="inline-block bg-blue-100 text-brand-primary font-bold px-3 py-1 rounded text-sm mb-4">Mass Production</div>
+                    <h2 class="text-3xl font-heading font-bold text-brand-dark mb-4">Plastic Injection Molding</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        From prototype to high-volume production, our injection molding facility handles a wide variety of thermoplastic polymers. We ensure minimal flash and high dimensional stability for every part.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white p-4 rounded shadow-sm border border-gray-100">
+                            <h4 class="font-bold text-brand-primary">Materials</h4>
+                            <p class="text-sm text-gray-500">ABS, Nylon, PP, PC, Delrin</p>
                         </div>
-                        
-                        <a href="contact.html" class="inline-block bg-shree-blue text-white font-bold py-3 px-8 rounded hover:bg-shree-yellow hover:text-shree-blue transition-colors">Start Your Project</a>
+                        <div class="bg-white p-4 rounded shadow-sm border border-gray-100">
+                            <h4 class="font-bold text-brand-primary">Applications</h4>
+                            <p class="text-sm text-gray-500">Automotive, Consumer Goods, Electrical</p>
+                        </div>
                     </div>
-                    <div class="w-full lg:w-1/2 relative">
-                         <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-shree-blue rounded-full opacity-10"></div>
-                        <img src="https://images.unsplash.com/photo-1599354607490-64293f9c6296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Injection Molding Machine" class="rounded-lg shadow-2xl relative z-10 w-full h-auto object-cover">
-                    </div>
+                    <a href="contact.html" class="bg-brand-dark text-white font-bold py-3 px-6 rounded hover:bg-brand-accent hover:text-brand-primary transition-colors">Discuss Molding Project</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1599354607490-64293f9c6296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Injection Molding Machine" class="rounded-lg shadow-xl w-full h-auto object-cover">
                 </div>
             </div>
         </section>
 
-        <!-- Service 3: VMC & CNC Machining -->
+        <!-- Service 3 -->
         <section id="machining" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row gap-12 items-center">
-                    <div class="w-full lg:w-1/2">
-                        <div class="inline-block bg-shree-yellow/20 text-shree-blue font-bold px-4 py-1 rounded-full text-sm mb-4">Precision Engineering</div>
-                        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">Machining (VMC / CNC)</h2>
-                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                            Our modern machine shop features advanced Vertical Machining Centers (VMC) and Computer Numerical Control (CNC) turning centers. We specialize in complex geometries and tight tolerance work for critical components.
-                        </p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-shree-blue text-white">
-                                        <i class="fas fa-ruler-combined"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg leading-6 font-medium text-gray-900">High Precision</h4>
-                                    <p class="mt-2 text-base text-gray-500"> achieving tolerances as tight as +/- 0.01mm for critical fitments.</p>
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-shree-blue text-white">
-                                        <i class="fas fa-cogs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg leading-6 font-medium text-gray-900">Complex Capabilities</h4>
-                                    <p class="mt-2 text-base text-gray-500">Milling, drilling, boring, tapping, and turning of varied metals.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="mt-8 inline-block bg-shree-blue text-white font-bold py-3 px-8 rounded hover:bg-shree-yellow hover:text-shree-blue transition-colors">Request Machining Quote</a>
-                    </div>
-                    <div class="w-full lg:w-1/2 relative">
-                        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-shree-yellow rounded-lg"></div>
-                        <img src="https://images.unsplash.com/photo-1621905252507-b35a830099aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CNC VMC Machining" class="rounded-lg shadow-2xl relative z-10 w-full h-auto object-cover bg-white">
-                    </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <div class="inline-block bg-brand-accent/20 text-brand-primary font-bold px-3 py-1 rounded text-sm mb-4">Precision Engineering</div>
+                    <h2 class="text-3xl font-heading font-bold text-brand-dark mb-4">VMC & CNC Machining</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We offer comprehensive CNC turning and VMC milling services. Our workshop is equipped to handle complex geometries with tight tolerances, ensuring perfect fitment for critical machinery parts.
+                    </p>
+                    <a href="contact.html" class="bg-brand-dark text-white font-bold py-3 px-6 rounded hover:bg-brand-accent hover:text-brand-primary transition-colors">Get Machining Quote</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35a830099aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CNC Machining Center" class="rounded-lg shadow-xl w-full h-auto object-cover">
                 </div>
             </div>
         </section>
-
-        <!-- CTA Section -->
-        <section class="py-16 bg-shree-blue text-white text-center">
-            <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-3xl font-heading font-bold mb-4">Need a Customized Solution?</h2>
-                <p class="text-gray-300 mb-8">Whether it's a prototype or a large production run, Shree Industries has the expertise to deliver.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="contact.html" class="bg-shree-yellow text-shree-blue font-bold py-3 px-8 rounded hover:bg-white transition-colors">Contact Us Today</a>
-                    <a href="tel:+919876543210" class="border border-white font-bold py-3 px-8 rounded hover:bg-white hover:text-shree-blue transition-colors">Call Now</a>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Brand Info -->
-                <div>
-                    <div class="flex items-center gap-2 mb-6">
-                        <i class="fa-solid fa-gears text-shree-yellow text-2xl"></i>
-                        <span class="font-heading font-bold text-xl tracking-wider uppercase">Shree Ind.</span>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Leading the way in manufacturing innovation in Anand since 2014. Committed to quality, precision, and customer satisfaction.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Sitemap</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Home</a></li>
-                        <li><a href="about.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>About Us</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Services</a></li>
-                        <li><a href="blog.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Blog</a></li>
-                        <li><a href="contact.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Services</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Hard Anodising</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Plastic Injection Molding</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>VMC Machining</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>CNC Job Work</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Find Us</h4>
-                    <ul class="space-y-4 text-gray-400 text-sm">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-shree-yellow mt-1 mr-3"></i>
-                            <span>GIDC Industrial Estate,<br>Anand, Gujarat, India</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-shree-yellow mr-3"></i>
-                            <span>+91 98765 43210</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-shree-yellow mr-3"></i>
-                            <span>info@shreeindustries.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-                <p>&copy; 2024 Shree Industries. All rights reserved.</p>
-                <div class="mt-4 md:mt-0 space-x-4">
-                    <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <span class="text-gray-700">|</span>
-                    <a href="#" class="hover:text-white">Terms & Conditions</a>
-                </div>
-            </div>
-        </div>
+    <footer class="bg-brand-primary text-white py-8 text-center border-t border-gray-800">
+        <p>&copy; 2024 Shree Industries. <a href="index.html" class="text-brand-accent hover:underline">Back to Home</a></p>
     </footer>
+
 </body>
 </html>

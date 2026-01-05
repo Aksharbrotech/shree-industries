@@ -1,0 +1,133 @@
+SEO Architecture Strategy: Shree Industries
+
+Prepared by: Senior SEO Architect
+Date: October 2023
+Focus: Local Ranking (Anand, Gujarat) & Industrial Keywords
+
+1. Technical SEO Checklist (Implemented in index.html)
+
+A. Core Web Vitals Optimization
+
+LCP (Largest Contentful Paint):
+
+Strategy: The Hero image is properly sized (object-cover) and we are using preconnect for the image CDN (Unsplash) to speed up the handshake.
+
+Code: <link rel="preconnect" href="https://images.unsplash.com">
+
+CLS (Cumulative Layout Shift):
+
+Strategy: Explicit width and height attributes added to all <img> tags. This reserves the screen space before the image loads, preventing content jumping.
+
+Mobile-First Indexing:
+
+Strategy: Viewport meta tag is standard. Touch targets (buttons) are sized >48px for finger taps. Font sizes are legible (base 16px).
+
+B. Schema Markup (JSON-LD)
+
+We have implemented a Nested JSON-LD structure.
+
+ManufacturingBusiness: More specific than just "LocalBusiness".
+
+geo: Latitude/Longitude provided for Anand GIDC to help Google Maps ranking.
+
+priceRange: $$ (Standard indicator).
+
+founder: explicitly named "Dhruv Patel" to build E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).
+
+2. On-Page SEO Checklist
+
+Page
+
+Primary Keyword
+
+H1 Tag
+
+Meta Title Strategy
+
+Home
+
+Hard Anodising Anand
+
+Hard Anodising & CNC Machining in Anand
+
+Hard Anodising & CNC Machining in Anand | Shree Industries
+
+Services
+
+Manufacturing Services
+
+Our Industrial Services
+
+Industrial Manufacturing Services | Injection Molding & VMC
+
+About
+
+Shree Industries Anand
+
+About Shree Industries
+
+About Us | Manufacturing Experts in Anand since 2014
+
+Contact
+
+Contact Shree Industries
+
+Get In Touch
+
+Contact Shree Industries | Factory Address & Phone
+
+Content Rules Applied:
+
+H1: One per page. Contains the primary keyword.
+
+H2: Used for sub-topics (e.g., "Our Manufacturing Capabilities").
+
+Alt Text: All images have descriptive alt text (e.g., "Hard Anodising Aluminum Parts" instead of "image1.jpg").
+
+Internal Linking: Footer contains direct links to specific services (#anodising, #machining) to distribute link equity.
+
+3. Local SEO Strategy (Anand, Gujarat)
+
+NAP Consistency:
+
+Name: Shree Industries
+
+Address: GIDC Industrial Estate, Anand, Gujarat
+
+Phone: +91 98765 43210
+
+Action: Ensure this EXACT format is used on Google Business Profile, Facebook, and JustDial.
+
+Google Map Embed:
+
+The index.html includes a placeholder for an embedded Google Map.
+
+Action: Generate an iframe from the Google Business Profile and replace the placeholder image in the "About" section.
+
+4. Performance & Production Recommendations
+
+The provided index.html uses Tailwind CSS via CDN for rapid prototyping and preview accuracy. For the Production Live Site, perform the following:
+
+Remove CDN: Install Tailwind via NPM.
+
+PurgeCSS: Configure tailwind.config.js to tree-shake unused CSS.
+
+Minify: Minify HTML, CSS, and JS files.
+
+Image Formats: Convert all JPG/PNG images to WebP or AVIF for 30% smaller file sizes.
+
+Example: <picture><source srcset="image.webp" type="image/webp"><img src="image.jpg"></picture>
+
+Caching: Configure .htaccess or Nginx to set Cache-Control: max-age=31536000 for static assets.
+
+5. E-E-A-T Signals (Trust Factors)
+
+Google evaluates content based on Experience, Expertise, Authoritativeness, and Trustworthiness.
+
+Experience: We added "Est. 2014" and "12+ Years Experience".
+
+Expertise: We listed specific technical specs (e.g., "+/- 0.01mm Accuracy", "Type III Anodising").
+
+Trust: Physical address, Indian phone number, and specific founder name are prominent.
+
+This architecture creates a solid foundation for ranking on Page 1 for terms like "Hard Anodising Anand" and "CNC Job Work Gujarat".
