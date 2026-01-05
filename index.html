@@ -97,10 +97,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative bg-gray-900 h-[85vh] flex items-center">
-        <!-- Background Image with Overlay -->
+    <header class="relative bg-gray-900 h-[85vh] flex items-center overflow-hidden">
+        <!-- Background Video with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1565034946487-077786996e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="CNC VMC Machining Factory Floor" class="w-full h-full object-cover opacity-40">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-50">
+                <source src="https://www.pexels.com/download/video/3987526/" type="video/mp4">
+                <!-- Fallback image if video fails -->
+                <img src="https://images.unsplash.com/photo-1565034946487-077786996e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="CNC VMC Machining Factory Floor" class="w-full h-full object-cover">
+            </video>
             <div class="absolute inset-0 bg-gradient-to-r from-shree-blue via-shree-blue/90 to-transparent"></div>
         </div>
 
