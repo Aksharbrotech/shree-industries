@@ -1,32 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shree Industries | Hard Anodising & VMC Job Work in Anand, Gujarat</title>
-    <meta name="description" content="Shree Industries (Est. 2014) in Anand, Gujarat. We specialize in Hard Anodising, Plastic Injection Molding, and Precision VMC/CNC Machining services.">
-    <meta name="keywords" content="Shree Industries Anand, Hard Anodising Gujarat, Plastic Injection Molding, VMC Job Work Anand, CNC Machining, Dhruv Patel">
-    <meta name="robots" content="index, follow">
+    
+    <!-- 1. SEO: PRIMARY METADATA -->
+    <!-- Title: Brand + Core Service + Location (Max 60 chars) -->
+    <title>Hard Anodising & CNC Machining in Anand | Shree Industries</title>
+    
+    <!-- Description: Benefit-driven, includes location & services (Max 160 chars) -->
+    <meta name="description" content="Shree Industries (Est. 2014) provides precision Hard Anodising, Plastic Injection Molding, and VMC Machining services in Anand, Gujarat. Get a quote today.">
+    
+    <!-- Keywords: Only for smaller engines, Google ignores this but good for legacy -->
+    <meta name="keywords" content="Hard Anodising Anand, CNC Job Work Gujarat, VMC Machining, Plastic Injection Molding India, Shree Industries">
+    
+    <!-- Canonical: Prevents duplicate content issues -->
     <link rel="canonical" href="https://www.shreeindustries.com/">
     
-    <!-- Tailwind CSS -->
+    <!-- Robots: Directives for crawlers -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Precision Manufacturing Services | Shree Industries Anand">
+    <meta property="og:description" content="Expert Hard Anodising, CNC Machining, and Injection Molding services. Serving Gujarat's industries since 2014.">
+    <meta property="og:url" content="https://www.shreeindustries.com/">
+    <meta property="og:site_name" content="Shree Industries">
+    
+    <!-- 2. PERFORMANCE: PRELOAD & PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- 3. STYLING (Tailwind CSS via CDN for Demo - In Production, use PurgeCSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        shree: {
-                            blue: '#0f172a', // Slate 900 - Primary Brand Color
-                            yellow: '#fbbf24', // Amber 400 - Accent Color
-                            dark: '#020617',
+                        brand: {
+                            dark: '#0f172a',  /* Slate 900 */
+                            primary: '#020617', /* Slate 950 */
+                            accent: '#fbbf24', /* Amber 400 */
                         }
                     },
                     fontFamily: {
@@ -37,223 +54,309 @@
             }
         }
     </script>
-</head>
-<body class="font-sans text-gray-700 antialiased selection:bg-shree-yellow selection:text-shree-blue">
+    
+    <!-- Fonts: Defer loading using swap to prevent FOIT (Flash of Invisible Text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
 
-    <!-- Top Bar (Contact Info for High Conversion) -->
-    <div class="bg-shree-dark text-gray-400 py-2 text-xs hidden sm:block border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <p><i class="fas fa-map-marker-alt mr-2"></i> GIDC Industrial Estate, Anand, Gujarat</p>
-            <div class="flex space-x-4">
-                <a href="tel:+919876543210" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i> +91 98765 43210</a>
-                <a href="mailto:info@shreeindustries.com" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i> info@shreeindustries.com</a>
+    <!-- 4. SCHEMA MARKUP (JSON-LD) - The SEO "Secret Weapon" -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ManufacturingBusiness",
+      "name": "Shree Industries",
+      "image": "https://www.shreeindustries.com/logo.png",
+      "@id": "https://www.shreeindustries.com/#organization",
+      "url": "https://www.shreeindustries.com",
+      "telephone": "+919876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GIDC Industrial Estate",
+        "addressLocality": "Anand",
+        "addressRegion": "Gujarat",
+        "postalCode": "388001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.5645,
+        "longitude": 72.9289
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$",
+      "founder": {
+        "@type": "Person",
+        "name": "Dhruv Patel"
+      },
+      "foundingDate": "2014",
+      "sameAs": [
+        "https://www.facebook.com/shreeindustries",
+        "https://www.linkedin.com/company/shreeindustries"
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- ACCESSIBILITY: Skip Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-accent text-brand-dark font-bold p-3 z-50">Skip to Main Content</a>
+
+    <!-- TOP BAR: NAP (Name, Address, Phone) Consistency for Local SEO -->
+    <div class="bg-brand-primary text-gray-400 py-2 text-xs border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p><i class="fas fa-map-marker-alt mr-2 text-brand-accent"></i> GIDC Industrial Estate, Anand, Gujarat</p>
+            <div class="flex space-x-6">
+                <a href="tel:+919876543210" class="hover:text-white transition-colors" aria-label="Call us"><i class="fas fa-phone mr-1 text-brand-accent"></i> +91 98765 43210</a>
+                <a href="mailto:info@shreeindustries.com" class="hidden sm:inline hover:text-white transition-colors" aria-label="Email us"><i class="fas fa-envelope mr-1 text-brand-accent"></i> info@shreeindustries.com</a>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="bg-shree-blue sticky top-0 z-50 shadow-xl border-b-2 border-shree-yellow">
+    <!-- NAVIGATION: Semantic <nav> -->
+    <nav class="bg-brand-dark sticky top-0 z-50 shadow-xl border-b-2 border-brand-accent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
-                <!-- Logo -->
+                <!-- Logo Area -->
                 <div class="flex items-center">
-                    <a href="index.html" class="flex items-center gap-3 group">
-                        <i class="fa-solid fa-gears text-shree-yellow text-3xl group-hover:rotate-180 transition-transform duration-700"></i>
+                    <a href="index.html" class="flex items-center gap-3 group" aria-label="Shree Industries Home">
+                        <i class="fa-solid fa-gears text-brand-accent text-3xl group-hover:rotate-180 transition-transform duration-700"></i>
                         <div class="flex flex-col">
-                            <span class="font-heading font-bold text-2xl tracking-wider text-white uppercase">Shree <span class="text-shree-yellow">Industries</span></span>
-                            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Engineering Excellence</span>
+                            <span class="font-heading font-bold text-2xl tracking-wider text-white uppercase">Shree <span class="text-brand-accent">Industries</span></span>
+                            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Est. 2014</span>
                         </div>
                     </a>
                 </div>
 
-                <!-- Desktop Menu -->
+                <!-- Desktop Links: Semantic hierarchy -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-shree-yellow font-medium border-b-2 border-shree-yellow px-1 py-1">Home</a>
-                    <a href="about.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">About Us</a>
-                    <a href="services.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Services</a>
-                    <a href="blog.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Blog</a>
-                    <a href="contact.html" class="bg-shree-yellow text-shree-blue hover:bg-white hover:text-shree-blue font-bold px-5 py-2.5 rounded shadow-lg transition-all transform hover:-translate-y-0.5">Contact Us</a>
+                    <a href="index.html" class="text-brand-accent font-medium border-b-2 border-brand-accent px-1 py-1" aria-current="page">Home</a>
+                    <a href="about.html" class="text-white hover:text-brand-accent font-medium transition-colors px-1 py-1">About Us</a>
+                    <a href="services.html" class="text-white hover:text-brand-accent font-medium transition-colors px-1 py-1">Services</a>
+                    <a href="blog.html" class="text-white hover:text-brand-accent font-medium transition-colors px-1 py-1">Blog</a>
+                    <a href="contact.html" class="bg-brand-accent text-brand-primary hover:bg-white font-bold px-5 py-2.5 rounded shadow-lg transition-transform transform hover:-translate-y-0.5">Get a Quote</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Menu Toggle -->
                 <div class="flex items-center md:hidden">
-                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-white hover:text-shree-yellow p-2">
+                    <button id="mobile-menu-btn" aria-label="Open Menu" class="text-white hover:text-brand-accent p-2">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-shree-blue border-t border-gray-700">
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-700 absolute w-full">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-shree-yellow font-bold bg-gray-800 rounded">Home</a>
+                <a href="index.html" class="block px-3 py-2 text-brand-accent font-bold bg-gray-800 rounded">Home</a>
                 <a href="about.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">About Us</a>
                 <a href="services.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Services</a>
-                <a href="blog.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative bg-gray-900 h-[85vh] flex items-center overflow-hidden">
-        <!-- Background Video with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-50">
-                <source src="https://www.pexels.com/download/video/3987526/" type="video/mp4">
-                <!-- Fallback image if video fails -->
-                <img src="https://images.unsplash.com/photo-1565034946487-077786996e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="CNC VMC Machining Factory Floor" class="w-full h-full object-cover">
-            </video>
-            <div class="absolute inset-0 bg-gradient-to-r from-shree-blue via-shree-blue/90 to-transparent"></div>
-        </div>
+    <!-- MAIN CONTENT START -->
+    <main id="main-content">
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div class="max-w-2xl">
-                <div class="inline-flex items-center space-x-2 bg-shree-yellow/10 border border-shree-yellow/30 rounded-full px-4 py-1 mb-6 backdrop-blur-sm">
-                    <span class="w-2 h-2 rounded-full bg-shree-yellow animate-pulse"></span>
-                    <span class="text-shree-yellow text-sm font-bold tracking-wide uppercase">Serving Gujarat Since 2014</span>
+        <!-- HERO SECTION: The H1 is crucial for SEO ranking -->
+        <!-- LCP Optimization: Use simple background or highly optimized image -->
+        <section class="relative bg-gray-900 py-32 md:py-48 overflow-hidden">
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-brand-dark/90 z-10"></div>
+            <!-- Background Image (Lazy loaded via CSS or low priority if below fold, but this is LCP so load it) -->
+            <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1565034946487-077786996e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-40"></div>
+            
+            <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+                <div class="inline-block bg-brand-accent/20 border border-brand-accent/40 rounded-full px-4 py-1 mb-6 backdrop-blur-sm">
+                    <span class="text-brand-accent text-sm font-bold tracking-wide uppercase"><i class="fas fa-check-circle mr-2"></i> ISO 9001:2015 Compliant</span>
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
-                    Precision <br/>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-shree-yellow to-yellow-200">Engineering</span>
-                    Solutions
+                <!-- PRIMARY KEYWORD IN H1 -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+                    Hard Anodising & <br class="hidden md:block"/>
+                    <span class="text-brand-accent">CNC Machining</span> in Anand
                 </h1>
                 
-                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light">
-                    Your trusted partner for <strong>Hard Anodising</strong>, <strong>Plastic Injection Molding</strong>, and high-precision <strong>VMC/CNC Machining</strong> in Anand.
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-2xl">
+                    Shree Industries delivers high-precision manufacturing solutions. Specializing in <strong>Plastic Injection Molding</strong>, <strong>VMC Job Work</strong>, and Industrial Surface Finishing since 2014.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="services.html" class="bg-shree-yellow text-shree-blue font-bold py-4 px-8 rounded hover:bg-white transition-all text-center shadow-[0_0_20px_rgba(251,191,36,0.3)]">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="services.html" class="bg-brand-accent text-brand-primary font-bold py-4 px-8 rounded hover:bg-white transition-all text-center shadow-[0_0_20px_rgba(251,191,36,0.3)]">
                         Explore Our Services
                     </a>
-                    <a href="contact.html" class="border-2 border-white text-white font-bold py-4 px-8 rounded hover:bg-white hover:text-shree-blue transition-all text-center">
+                    <a href="contact.html" class="border-2 border-white text-white font-bold py-4 px-8 rounded hover:bg-white hover:text-brand-primary transition-all text-center">
                         Request a Quote
                     </a>
                 </div>
             </div>
-        </div>
-        
-        <!-- Animated Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-            <i class="fas fa-chevron-down text-2xl opacity-50"></i>
-        </div>
-    </header>
+        </section>
 
-    <!-- Main Content Area -->
-    <main>
-        
-        <!-- Introduction / Stats -->
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-shree-yellow font-bold uppercase tracking-widest text-sm mb-2">Who We Are</h2>
-                        <h3 class="text-4xl font-heading font-bold text-shree-blue mb-6">Driven by Quality,<br>Defined by Precision.</h3>
-                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                            Shree Industries was established in 2014 by <strong>Mr. Dhruv Patel</strong> with a vision to provide world-class manufacturing services in Anand, Gujarat. Over the last 12 years, we have evolved from a small workshop to a fully-equipped industrial facility.
-                        </p>
-                        
-                        <div class="grid grid-cols-3 gap-6 mt-8 border-t border-gray-100 pt-8">
-                            <div>
-                                <span class="block text-3xl font-heading font-bold text-shree-blue">12+</span>
-                                <span class="text-sm text-gray-500 font-medium">Years Experience</span>
-                            </div>
-                            <div>
-                                <span class="block text-3xl font-heading font-bold text-shree-blue">500+</span>
-                                <span class="text-sm text-gray-500 font-medium">Happy Clients</span>
-                            </div>
-                            <div>
-                                <span class="block text-3xl font-heading font-bold text-shree-blue">100%</span>
-                                <span class="text-sm text-gray-500 font-medium">On-Time Delivery</span>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <a href="about.html" class="text-shree-blue font-bold border-b-2 border-shree-yellow pb-1 hover:text-shree-yellow transition-colors">
-                                Meet Our Team <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                            </a>
-                        </div>
+        <!-- TRUST SIGNALS SECTION (E-E-A-T) -->
+        <section class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+                    <div class="p-4">
+                        <div class="text-4xl font-heading font-bold text-brand-dark mb-2">12+</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-wide">Years Experience</div>
                     </div>
-                    
-                    <div class="relative">
-                        <div class="absolute -top-4 -right-4 w-32 h-32 bg-shree-yellow rounded-full opacity-10 blur-2xl"></div>
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shree Industries Factory Team" class="relative z-10 rounded-lg shadow-2xl w-full h-auto transform hover:scale-[1.02] transition-transform duration-500">
-                        <div class="absolute -bottom-6 -left-6 bg-shree-blue p-6 rounded text-white shadow-xl z-20 max-w-xs hidden md:block">
-                            <i class="fas fa-quote-left text-shree-yellow text-2xl mb-2"></i>
-                            <p class="font-medium">"Our goal is zero-defect manufacturing."</p>
-                        </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-heading font-bold text-brand-dark mb-2">500+</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-wide">Projects Delivered</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-heading font-bold text-brand-dark mb-2">0.01<span class="text-lg">mm</span></div>
+                        <div class="text-sm text-gray-500 uppercase tracking-wide">Machining Tolerance</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-heading font-bold text-brand-dark mb-2">24/7</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-wide">Production Capacity</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="py-20 bg-gray-50">
+        <!-- CORE SERVICES SECTION: H2 Keywords -->
+        <section id="services" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl font-heading font-bold text-shree-blue mb-4">Our Core Capabilities</h2>
-                    <div class="w-20 h-1 bg-shree-yellow mx-auto rounded"></div>
-                    <p class="text-gray-600 mt-6 text-lg">We offer a complete range of industrial solutions tailored to your specifications.</p>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Our Manufacturing Capabilities</h2>
+                    <div class="w-20 h-1 bg-brand-accent mx-auto rounded mb-6"></div>
+                    <p class="text-gray-600 text-lg">We provide end-to-end industrial solutions, from raw material selection to final surface treatment.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <a href="services.html" class="group bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:border-shree-yellow transition-all duration-300 hover:-translate-y-2">
-                        <div class="w-16 h-16 bg-shree-blue/10 rounded-full flex items-center justify-center text-shree-blue text-2xl mb-6 group-hover:bg-shree-yellow group-hover:text-shree-blue transition-colors">
-                            <i class="fas fa-layer-group"></i>
+                    
+                    <!-- Service 1: Hard Anodising -->
+                    <article class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- CLS Optimization: Explicit Width/Height ratio maintained by object-cover -->
+                            <img src="https://images.unsplash.com/photo-1621252179027-94459d27d3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                                 alt="Hard Anodising Aluminum Parts in Anand" 
+                                 width="600" height="400"
+                                 loading="lazy"
+                                 class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Hard Anodising</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">
-                            Premium hard coat anodising services for aluminum components. We ensure superior corrosion resistance, surface hardness, and electrical insulation suitable for aerospace and automotive standards.
-                        </p>
-                        <span class="text-shree-yellow font-bold text-sm uppercase tracking-wider group-hover:text-shree-blue">Learn More &rarr;</span>
-                    </a>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-2xl font-bold text-brand-dark mb-3">Hard Anodising</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Industrial-grade Type III anodising for aluminum. Provides extreme wear resistance, corrosion protection, and electrical insulation.
+                            </p>
+                            <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> 40-60 Micron Thickness</li>
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> Black & Clear Finishes</li>
+                            </ul>
+                            <a href="services.html#anodising" class="inline-block text-brand-primary font-bold border-b-2 border-brand-accent hover:text-brand-accent transition-colors">View Specifications</a>
+                        </div>
+                    </article>
 
-                    <!-- Service 2 -->
-                    <a href="services.html" class="group bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:border-shree-yellow transition-all duration-300 hover:-translate-y-2">
-                        <div class="w-16 h-16 bg-shree-blue/10 rounded-full flex items-center justify-center text-shree-blue text-2xl mb-6 group-hover:bg-shree-yellow group-hover:text-shree-blue transition-colors">
-                            <i class="fas fa-cubes"></i>
+                    <!-- Service 2: VMC/CNC Machining -->
+                    <article class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b35a830099aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                                 alt="CNC VMC Machining Job Work" 
+                                 width="600" height="400"
+                                 loading="lazy"
+                                 class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Plastic Injection Molding</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">
-                            High-volume thermoplastic manufacturing. From mold design to final production, we deliver precise plastic parts for consumer goods and industrial applications.
-                        </p>
-                        <span class="text-shree-yellow font-bold text-sm uppercase tracking-wider group-hover:text-shree-blue">Learn More &rarr;</span>
-                    </a>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-2xl font-bold text-brand-dark mb-3">VMC & CNC Machining</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Precision milling and turning services. Our facility features advanced VMC centers capable of complex geometries and tight tolerances.
+                            </p>
+                            <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> +/- 0.01mm Accuracy</li>
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> Steel, Al, Brass, Nylon</li>
+                            </ul>
+                            <a href="services.html#machining" class="inline-block text-brand-primary font-bold border-b-2 border-brand-accent hover:text-brand-accent transition-colors">View Machinery List</a>
+                        </div>
+                    </article>
 
-                    <!-- Service 3 -->
-                    <a href="services.html" class="group bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:border-shree-yellow transition-all duration-300 hover:-translate-y-2">
-                        <div class="w-16 h-16 bg-shree-blue/10 rounded-full flex items-center justify-center text-shree-blue text-2xl mb-6 group-hover:bg-shree-yellow group-hover:text-shree-blue transition-colors">
-                            <i class="fas fa-cogs"></i>
+                    <!-- Service 3: Injection Molding -->
+                    <article class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1599354607490-64293f9c6296?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                                 alt="Plastic Injection Molding Die" 
+                                 width="600" height="400"
+                                 loading="lazy"
+                                 class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">VMC / CNC Machining</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">
-                            Precision VMC job work and CNC turning. We handle complex geometries with tight tolerances using state-of-the-art machinery and skilled operators.
-                        </p>
-                        <span class="text-shree-yellow font-bold text-sm uppercase tracking-wider group-hover:text-shree-blue">Learn More &rarr;</span>
-                    </a>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-2xl font-bold text-brand-dark mb-3">Injection Molding</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Mass production of thermoplastic parts. We handle everything from mold design consultation to final batch production.
+                            </p>
+                            <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> ABS, PP, PC, Nylon</li>
+                                <li><i class="fas fa-check text-brand-accent mr-2"></i> High Volume Capacity</li>
+                            </ul>
+                            <a href="services.html#molding" class="inline-block text-brand-primary font-bold border-b-2 border-brand-accent hover:text-brand-accent transition-colors">Our Capabilities</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="py-20 bg-shree-blue relative overflow-hidden">
-            <!-- Decorative Elements -->
-            <div class="absolute top-0 right-0 w-64 h-64 bg-shree-yellow opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-            <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+        <!-- ABOUT / LOCAL SEO SECTION -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-brand-accent font-bold uppercase tracking-widest text-sm mb-2 block">Why Choose Shree Industries?</span>
+                        <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Engineering Excellence in the Heart of Gujarat</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Established in 2014 by <strong>Mr. Dhruv Patel</strong>, Shree Industries has grown from a small workshop to a premier manufacturing partner in the Anand GIDC estate.
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            We understand the critical nature of industrial components. Whether it's the surface hardness of an aerospace part or the dimensional accuracy of an automotive gear, our quality assurance protocols ensure zero defects.
+                        </p>
+                        
+                        <a href="about.html" class="inline-flex items-center bg-brand-dark text-white font-bold py-3 px-6 rounded hover:bg-brand-accent hover:text-brand-dark transition-colors">
+                            Read Our Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <!-- Google Maps Embed Placeholder: Vital for Local SEO -->
+                        <div class="relative w-full h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner group">
+                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                  alt="Shree Industries Factory Floor"
+                                  loading="lazy"
+                                  class="w-full h-full object-cover">
+                            <div class="absolute bottom-4 left-4 bg-white/95 p-4 rounded shadow-lg max-w-xs backdrop-blur-sm">
+                                <p class="font-bold text-brand-dark"><i class="fas fa-map-pin text-brand-accent mr-2"></i> Located in Anand GIDC</p>
+                                <p class="text-xs text-gray-500 mt-1">Easily accessible from Vadodara & Ahmedabad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-                <h2 class="text-4xl font-heading font-bold text-white mb-6">Ready to Start Your Project?</h2>
-                <p class="text-xl text-gray-300 mb-10">Contact <strong>Dhruv Patel</strong> and the team at Shree Industries for a consultation and quote today.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <a href="contact.html" class="bg-shree-yellow text-shree-blue font-bold text-lg py-4 px-10 rounded shadow-lg hover:bg-white transition-all transform hover:scale-105">
-                        Contact Us Now
+        <!-- CTA SECTION -->
+        <section class="py-16 bg-brand-primary text-white text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand-accent rounded-full filter blur-[100px] opacity-10"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-heading font-bold mb-4">Ready to Optimize Your Production?</h2>
+                <p class="text-gray-300 mb-8 text-lg">Contact us for a free technical consultation and quote.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:+919876543210" class="bg-brand-accent text-brand-primary font-bold py-3 px-8 rounded hover:bg-white transition-colors">
+                        <i class="fas fa-phone-alt mr-2"></i> +91 98765 43210
                     </a>
-                    <a href="tel:+919876543210" class="flex items-center justify-center border-2 border-gray-600 text-white font-bold text-lg py-4 px-10 rounded hover:border-white hover:bg-white hover:text-shree-blue transition-all">
-                        <i class="fas fa-phone-alt mr-3"></i> Call +91 98765 43210
+                    <a href="contact.html" class="border border-white/30 bg-white/5 backdrop-blur font-bold py-3 px-8 rounded hover:bg-white hover:text-brand-primary transition-colors">
+                        Online Inquiry
                     </a>
                 </div>
             </div>
@@ -261,79 +364,85 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+    <!-- FOOTER: Semantic, keyword-rich, and clean -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <!-- Brand Info -->
                 <div>
-                    <div class="flex items-center gap-2 mb-6">
-                        <i class="fa-solid fa-gears text-shree-yellow text-2xl"></i>
-                        <span class="font-heading font-bold text-xl tracking-wider uppercase">Shree Ind.</span>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="font-heading font-bold text-xl uppercase text-white">Shree <span class="text-brand-accent">Industries</span></span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Leading the way in manufacturing innovation in Anand since 2014. Committed to quality, precision, and customer satisfaction.
+                    <p class="text-gray-400 mb-6">
+                        Your trusted partner for precision engineering and surface finishing solutions in Gujarat.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fab fa-facebook-f text-lg"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fab fa-linkedin-in text-lg"></i></a>
                     </div>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Navigation -->
                 <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Sitemap</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Home</a></li>
-                        <li><a href="about.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>About Us</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Services</a></li>
-                        <li><a href="blog.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Blog</a></li>
-                        <li><a href="contact.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Contact Us</a></li>
+                    <h3 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">Explore</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-brand-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-brand-accent transition-colors">Services</a></li>
+                        <li><a href="blog.html" class="hover:text-brand-accent transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
-                <!-- Services -->
+                <!-- Services Links (Internal Linking for SEO) -->
                 <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Services</h4>
-                    <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Hard Anodising</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Plastic Injection Molding</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>VMC Machining</a></li>
-                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>CNC Job Work</a></li>
+                    <h3 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html#anodising" class="hover:text-brand-accent transition-colors">Hard Anodising</a></li>
+                        <li><a href="services.html#machining" class="hover:text-brand-accent transition-colors">CNC Machining</a></li>
+                        <li><a href="services.html#molding" class="hover:text-brand-accent transition-colors">Injection Molding</a></li>
+                        <li><a href="services.html" class="hover:text-brand-accent transition-colors">VMC Job Work</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
+                <!-- Contact Info (NAP) -->
                 <div>
-                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Find Us</h4>
-                    <ul class="space-y-4 text-gray-400 text-sm">
+                    <h3 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">Contact</h3>
+                    <ul class="space-y-3 text-gray-400">
                         <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-shree-yellow mt-1 mr-3"></i>
-                            <span>GIDC Industrial Estate,<br>Anand, Gujarat, India</span>
+                            <i class="fas fa-map-marker-alt text-brand-accent mt-1 mr-3"></i>
+                            <address class="not-italic">GIDC Industrial Estate,<br>Anand, Gujarat, India</address>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-phone text-shree-yellow mr-3"></i>
-                            <span>+91 98765 43210</span>
+                            <i class="fas fa-phone text-brand-accent mr-3"></i>
+                            <a href="tel:+919876543210" class="hover:text-white">+91 98765 43210</a>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-envelope text-shree-yellow mr-3"></i>
-                            <span>info@shreeindustries.com</span>
+                            <i class="fas fa-envelope text-brand-accent mr-3"></i>
+                            <a href="mailto:info@shreeindustries.com" class="hover:text-white">info@shreeindustries.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
                 <p>&copy; 2024 Shree Industries. All rights reserved.</p>
                 <div class="mt-4 md:mt-0 space-x-4">
                     <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <span class="text-gray-700">|</span>
-                    <a href="#" class="hover:text-white">Terms & Conditions</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- MOBILE MENU SCRIPT (Minimal JS) -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
