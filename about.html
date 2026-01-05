@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shree Industries - Manufacturing Experts in Anand</title>
+    <meta name="description" content="Learn about Shree Industries, established in 2014 in Anand, Gujarat. Meet our team led by Dhruv Patel and discover our commitment to precision manufacturing.">
+    <meta name="keywords" content="About Shree Industries, Dhruv Patel Anand, Manufacturing Company Gujarat, Anodising Experts, VMC Machining Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.shreeindustries.com/about.html">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shree: {
+                            blue: '#0f172a', // Slate 900
+                            yellow: '#fbbf24', // Amber 400
+                            dark: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased selection:bg-shree-yellow selection:text-shree-blue flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-shree-dark text-gray-400 py-2 text-xs hidden sm:block border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <p><i class="fas fa-map-marker-alt mr-2"></i> GIDC Industrial Estate, Anand, Gujarat</p>
+            <div class="flex space-x-4">
+                <a href="tel:+919876543210" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i> +91 98765 43210</a>
+                <a href="mailto:info@shreeindustries.com" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i> info@shreeindustries.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-shree-blue sticky top-0 z-50 shadow-xl border-b-2 border-shree-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <i class="fa-solid fa-gears text-shree-yellow text-3xl group-hover:rotate-180 transition-transform duration-700"></i>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-bold text-2xl tracking-wider text-white uppercase">Shree <span class="text-shree-yellow">Industries</span></span>
+                            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Engineering Excellence</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Home</a>
+                    <a href="about.html" class="text-shree-yellow font-medium border-b-2 border-shree-yellow px-1 py-1">About Us</a>
+                    <a href="services.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Services</a>
+                    <a href="blog.html" class="text-white hover:text-shree-yellow font-medium transition-colors px-1 py-1">Blog</a>
+                    <a href="contact.html" class="bg-shree-yellow text-shree-blue hover:bg-white hover:text-shree-blue font-bold px-5 py-2.5 rounded shadow-lg transition-all transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-white hover:text-shree-yellow p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-shree-blue border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-shree-yellow font-bold bg-gray-800 rounded">About Us</a>
+                <a href="services.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Services</a>
+                <a href="blog.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header/Hero -->
+    <header class="bg-shree-blue py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">About Us</h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Discover the story, the team, and the values that drive Shree Industries.</p>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Story Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative h-96 rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1565610222536-ef125c5975e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shree Industries Factory Interior" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-shree-yellow text-shree-blue px-6 py-4 font-heading font-bold text-xl">
+                            Est. 2014
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-shree-blue font-bold tracking-wider uppercase text-sm">Our Journey</span>
+                        <h2 class="text-3xl font-heading font-bold text-gray-900 mt-2 mb-6">12 Years of Engineering Excellence</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Shree Industries was founded in 2014 in the industrial heart of Anand, Gujarat. What started as a vision to provide reliable local machining services has grown into a comprehensive manufacturing hub.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Over the past 12 years, we have continuously invested in advanced technology—from high-precision VMC machines to state-of-the-art anodising plants. Our commitment to quality has allowed us to serve diverse sectors, including automotive, textile, and general engineering.
+                        </p>
+                        <div class="flex gap-4">
+                            <div class="border-l-4 border-shree-yellow pl-4">
+                                <span class="block text-2xl font-bold text-shree-blue">2014</span>
+                                <span class="text-sm text-gray-500">Established</span>
+                            </div>
+                            <div class="border-l-4 border-shree-yellow pl-4">
+                                <span class="block text-2xl font-bold text-shree-blue">500+</span>
+                                <span class="text-sm text-gray-500">Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-shree-blue font-bold tracking-wider uppercase text-sm">Leadership</span>
+                    <h2 class="text-3xl font-heading font-bold text-gray-900 mt-2">Meet Our Team</h2>
+                    <div class="w-16 h-1 bg-shree-yellow mx-auto mt-4 rounded"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Member 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow group">
+                        <div class="h-64 bg-gray-200 overflow-hidden">
+                             <!-- Using UI Avatars for placeholder -->
+                            <img src="https://ui-avatars.com/api/?name=Dhruv+Patel&background=0f172a&color=fbbf24&size=512" alt="Dhruv Patel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-900">Dhruv Patel</h3>
+                            <p class="text-shree-yellow font-medium text-sm uppercase tracking-wide">Founder</p>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow group">
+                        <div class="h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Nand+Patel&background=1e293b&color=fff&size=512" alt="Nand Patel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-900">Nand Patel</h3>
+                            <p class="text-gray-500 font-medium text-sm uppercase tracking-wide">Management</p>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow group">
+                        <div class="h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Kush+Patel&background=1e293b&color=fff&size=512" alt="Kush Patel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-900">Kush Patel</h3>
+                            <p class="text-gray-500 font-medium text-sm uppercase tracking-wide">Working Partner</p>
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow group">
+                        <div class="h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Anish+Patel&background=1e293b&color=fff&size=512" alt="Anish Patel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-900">Anish Patel</h3>
+                            <p class="text-gray-500 font-medium text-sm uppercase tracking-wide">Working Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision/Values Section -->
+        <section class="py-20 bg-shree-blue text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 border border-gray-700 rounded-lg bg-shree-blue hover:bg-gray-800 transition-colors">
+                        <div class="w-14 h-14 bg-shree-yellow text-shree-blue rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Mission</h3>
+                        <p class="text-gray-400 text-sm">To deliver superior manufacturing solutions that enhance the durability and performance of our clients' products.</p>
+                    </div>
+                    <div class="p-6 border border-gray-700 rounded-lg bg-shree-blue hover:bg-gray-800 transition-colors">
+                        <div class="w-14 h-14 bg-shree-yellow text-shree-blue rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Values</h3>
+                        <p class="text-gray-400 text-sm">Integrity, Precision, and Customer-Centricity. We believe in building long-term relationships based on trust.</p>
+                    </div>
+                    <div class="p-6 border border-gray-700 rounded-lg bg-shree-blue hover:bg-gray-800 transition-colors">
+                        <div class="w-14 h-14 bg-shree-yellow text-shree-blue rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Vision</h3>
+                        <p class="text-gray-400 text-sm">To be Gujarat's leading provider of integrated finishing and machining services by 2030.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-gears text-shree-yellow text-2xl"></i>
+                        <span class="font-heading font-bold text-xl tracking-wider uppercase">Shree Ind.</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Leading the way in manufacturing innovation in Anand since 2014. Committed to quality, precision, and customer satisfaction.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-shree-yellow hover:text-shree-blue transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Sitemap</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Home</a></li>
+                        <li><a href="about.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>About Us</a></li>
+                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Services</a></li>
+                        <li><a href="blog.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-angle-right mr-2 text-xs"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Services</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Hard Anodising</a></li>
+                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>Plastic Injection Molding</a></li>
+                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>VMC Machining</a></li>
+                        <li><a href="services.html" class="hover:text-shree-yellow transition-colors"><i class="fas fa-circle text-[6px] mr-2 align-middle"></i>CNC Job Work</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 border-b border-gray-800 pb-2 inline-block">Find Us</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-shree-yellow mt-1 mr-3"></i>
+                            <span>GIDC Industrial Estate,<br>Anand, Gujarat, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-shree-yellow mr-3"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-shree-yellow mr-3"></i>
+                            <span>info@shreeindustries.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2024 Shree Industries. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <span class="text-gray-700">|</span>
+                    <a href="#" class="hover:text-white">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
